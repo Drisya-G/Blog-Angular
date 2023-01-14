@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-secondary p-2 ">
+  <div class="container">
+    <a class="navbar-brand  " href="index.html">
+      <img src="../../assets/images/logo.jpg" class="logo">
+
+    </a>
+    <h4 class="text-light me-5  ">CoOpeR CoLab</h4>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      (click)="toggleNavbarCollapsing()" aria-controls="navbarCollapse" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" [class.collapse]="navbarCollapsed" id="navbarCollapse">
+     
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/" routerLinkActive="active">Home</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" routerLink="/about-us"  routerLinkActive="active">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"   routerLink="/articles"  routerLinkActive="active">Articles</a>
+        </li>
+       
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contact-us"  routerLinkActive="active">Contact Us</a>
+        </li>
+      </ul>
+     
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Login</a>
+        </li>
+    </ul>
+
+    </div>
+  </div>
+</nav>
